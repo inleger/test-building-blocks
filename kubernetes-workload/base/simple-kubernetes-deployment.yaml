@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  #A Deployment named nginx-deployment is created, indicated by the .metadata.name field. 
+  #This name will become the basis for the ReplicaSets and Pods which are created later.
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  #The Deployment creates a ReplicaSet that creates one replicated Pod, indicated by the .spec.replicas field.
+  replicas: 1
+  #The .spec.selector field defines how the created ReplicaSet finds which Pods to manage. 
+  #In this case, you select a label that is defined in the Pod template (app: nginx). 
+  #However, more sophisticated selection rules are possible, as long as the Pod template itself satisfies the rule.
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    #The Pod is labeled app: nginx using the .metadata.labels field.
+    metadata:
+      labels:
+        app: nginx
+    #The Pod template's specification, or .spec field, indicates that the Pods run one container, nginx, which runs the nginx Docker Hub image at version 1.27.4.
+    spec:
+      #Create one container and name it nginx using the .spec.containers[0].name field.
+      containers:
+      - name: nginx
+        image: nexus.avha.local:5150/nginx:1.27.4
+        ports:
+        - containerPort: 80

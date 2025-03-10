@@ -1,2 +1,5 @@
-# test-building-blocks
-Lorem ipsum satöbbi.
+# OKD Building Blocks
+
+## Mi ez?
+
+OKD sablonok, jógyakorlatok, megállapodások gyűjteménye.

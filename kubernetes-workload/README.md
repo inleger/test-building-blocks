@@ -1,0 +1,75 @@
+# Simple Kubernetes workload
+
+Felelős: Kákonyi István
+
+A blokk tartalmazza, hogy egy image-et hogyan lehet kubernetes által kezelt konténerként futtatni. Az alábbi példákat tartalmazza:
+
+- Deployment típusú workload
+
+
+## Felhasznált anyagok
+
+- https://kubernetes.io/docs/concepts/workloads/controllers/deployment/  
+
+
+## Verziók
+
+- min.: OKD 4.12
+
+
+## Magyarázat
+
+A Deployment egy vagy több konténer életciklusának kezelésére való. Alapvetően arra szolgál, hogy a konténereket futtassa. A futtatás alapesetben állapotmentes. A Deployment leíróban meg kell adni a kívánt állapotot, aminek hatására a kubernetes a tényleges állapotot a kívánt állapotra változtatja.
+
+A Kubernetes Deployment leírók tipikus használati esetei a következők:
+- Alkalmazás frissítése (Rolling updates)
+- Automatikus helyreállítás (Self-healing)
+- Skálázás (Scaling)
+- Környezetek közötti különbségek kezelése
+- Verziókövetés és visszagörgetés
+- Több alkalmazásverzió kezelése
+- Különböző konfigurációk kezelése
+
+
+## Függőségek
+
+- Nincsenek 
+
+
+## Ide jöhetnek olyan tech infók, amik a beállításhoz, kigördítéshez kellenek
+## Pl hozzáférések beállítása, manuális telepítési lépések, etc
+
+- legalább admin szintű hozzáférés az OKD T11-T14 klaszter valamelyik namespace-éhez.
+
+
+## Elérés próbához
+
+Az OKD T11-T14 clusterbe telepíthető az alábbi parancsot kiadva a gyökér könyvtárból:
+
+kubectl kustomize -k overlays/g3nonprod-t11-t14
+
+## Állapot
+
+- [x] Dokumentáció
+- [~] Rererencia kód 
+- [x] Referencia leíró
+- [~] Kódváz
+- [~] Komponens
+- [x] Telepíthető, működőképes
+- [~] HA megvalósítás
+- [~] Security ellenőrzött megvalósítás
+- [~] Adatot perzisztál PVC-re
+
+## Confluence link
+
+
+## Továbbfejlesztési lehetőség
+
+- StatefulSet típusú workload bemutatása
+- DaemonSet típusú workload bemutatása
+- Job típusú workload bemutatása
+- CronJob típusú workload bemutatása
+
+## További kapcsolódó blokkok
+
+- 

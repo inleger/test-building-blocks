@@ -14,7 +14,8 @@ A blokk tartalmazza, hogy egy image-et hogyan lehet kubernetes által kezelt kon
 
 ## Verziók
 
-- min.: OKD 4.12
+- min. OKD 4.12
+- min. Kubernetes 1.25
 
 
 ## Magyarázat
@@ -45,7 +46,9 @@ A Kubernetes Deployment leírók tipikus használati esetei a következők:
 
 Az OKD T11-T14 clusterbe telepíthető az alábbi parancsot kiadva a gyökér könyvtárból:
 
-kubectl kustomize -k samples/kustomize/overlays/g3nonprod-t11-t14
+```
+kubectl apply -k samples/kustomize/overlays/g3nonprod-t11-t14
+```
 
 ## Állapot
 

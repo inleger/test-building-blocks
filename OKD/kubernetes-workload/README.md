@@ -62,6 +62,7 @@ kubectl kustomize -k samples/kustomize/overlays/g3nonprod-t11-t14
 
 ## Confluence link
 
+https://alerant.atlassian.net/wiki/spaces/~6155690b72f6970069123cc1/pages/6539149321/kubernetes-workload
 
 ## Továbbfejlesztési lehetőség
 

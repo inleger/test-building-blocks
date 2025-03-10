@@ -41,7 +41,7 @@ A Kubernetes Deployment leírók tipikus használati esetei a következők:
 - legalább admin szintű hozzáférés az OKD T11-T14 klaszter valamelyik namespace-éhez.
 
 
-## Elérés próbához
+## Telepítés
 
 Az OKD T11-T14 clusterbe telepíthető az alábbi parancsot kiadva a gyökér könyvtárból:
 

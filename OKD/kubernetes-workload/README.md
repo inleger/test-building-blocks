@@ -36,8 +36,7 @@ A Kubernetes Deployment leírók tipikus használati esetei a következők:
 - Nincsenek 
 
 
-## Ide jöhetnek olyan tech infók, amik a beállításhoz, kigördítéshez kellenek
-## Pl hozzáférések beállítása, manuális telepítési lépések, etc
+## Kipróbáláshoz szükséges technikai infók (Pl. hozzáférések beállítása, manuális telepítési lépések, stb...)
 
 - legalább admin szintű hozzáférés az OKD T11-T14 klaszter valamelyik namespace-éhez.
 

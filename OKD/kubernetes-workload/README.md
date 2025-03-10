@@ -46,7 +46,7 @@ A Kubernetes Deployment leírók tipikus használati esetei a következők:
 
 Az OKD T11-T14 clusterbe telepíthető az alábbi parancsot kiadva a gyökér könyvtárból:
 
-kubectl kustomize -k overlays/g3nonprod-t11-t14
+kubectl kustomize -k samples/kustomize/overlays/g3nonprod-t11-t14
 
 ## Állapot
 
